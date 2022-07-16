@@ -1,9 +1,24 @@
-<H1><a href="/">CILAB</a></H1>
-
-<nav>
-	{% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-	{% endfor %}
-</nav>
-
-<button><strong><u>Hello</u> World!</strong></button>
+<div class="header">
+	<H1><a href="/">CILAB</a></H1>
+	<nav class="main-nav">
+		<div class="main-nav-box">
+			<ul>
+				{% for item in site.data.navigation %}
+					<li class="main-nav-li">
+						<a 
+							href="{{ item.link }}" 
+							{% if page.url == item.link %}
+								class="main-nav-a current"
+							{% else %}
+								class="main-nav-a"
+							{% endif %}
+						>
+							{{ item.name }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+	<button class="toggle" ><img src="/assets/images/home/toggle.png"></button>
+</div>
