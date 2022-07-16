@@ -1,6 +1,8 @@
 collections:
   members:
     output: true
+  published:
+    output: true
 
 defaults:
   - scope:
@@ -9,6 +11,9 @@ defaults:
     values:
       layout: "member"
 
+exclude: 
+  - tmp/
+  - vendor/
 
 plugins:
   - jekyll-feed

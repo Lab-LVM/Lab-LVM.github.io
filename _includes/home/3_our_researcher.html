@@ -1,1 +1,22 @@
-<div>This is our researchers</div>
+<div>
+    <h2>Our Researchers</h2>
+    <ul>
+        {% assign members = site.members | sample: site.members.size %}
+        {% for member in members %}
+            <li>
+                <img src="{{ member.img_url }}">
+                <h3>{{ member.name }}</h3>
+                <h4>{{ member.position }}</h4>
+                <ul>
+                    {% assign interests = member.research_interests | slice: 0,3 %}
+                    {% for interest in interests %}
+                        <li>{{ interest }}</li>
+                    {% endfor %}
+                    {% if member.research_interests.size > 3 %}
+                        <li>...</li>
+                    {% endif %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

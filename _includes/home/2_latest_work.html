@@ -1,1 +1,13 @@
-<h3>This is Latest work</h3>
+<div>
+    <h2>This is Latest work</h2>
+    <ul>
+        {% assign latest_papers = site.published | sort: "date" | reverse | slice: 0, 6 %}
+        {% for paper in latest_papers %}
+        <li>
+            <img src="{{ paper.img }}" width="301.33" height="280">
+            <h2><a href="{{ paper.url }}">{{ paper.title | slice: 0, 20 }}...</a></h2>
+            <h3>{{ paper.author }}</h3>
+        </li>
+        {% endfor %}
+    </ul>
+</div>  
