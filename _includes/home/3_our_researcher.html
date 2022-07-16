@@ -1,22 +1,43 @@
-<div>
-    <h2>Our Researchers</h2>
-    <ul>
-        {% assign members = site.members | sample: site.members.size %}
-        {% for member in members %}
-            <li>
-                <img src="{{ member.img_url }}">
-                <h3>{{ member.name }}</h3>
-                <h4>{{ member.position }}</h4>
-                <ul>
-                    {% assign interests = member.research_interests | slice: 0,3 %}
-                    {% for interest in interests %}
-                        <li>{{ interest }}</li>
-                    {% endfor %}
-                    {% if member.research_interests.size > 3 %}
-                        <li>...</li>
-                    {% endif %}
-                </ul>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+<section class="section grey-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <div class="section-info">
+                        <h2>Our Researchers</h2>
+                        <p></p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="card-grid">
+                                {% assign members = site.members | sample: site.members.size %}
+                                {% for member in members %}
+                                <div class="card-view">
+                                    <div class="card-img">
+                                        <a href="{{ member.url }}"><img src="{{ member.img_url }}"></a>
+                                    </div>
+                                    <div class="card-name-pos">
+                                        <h3>{{ member.name }}</h3>
+                                        <p>{{ member.position }}</p>
+                                    </div>
+                                    <div class="card-desc">
+                                        <ul>
+                                            {% assign interests = member.research_interests | slice: 0,3 %}
+                                            {% for interest in interests %}
+                                            <li>{{ interest }}</li>
+                                            {% endfor %}
+                                            {% if member.research_interests.size > 3 %}
+                                            <li>...</li>
+                                            {% endif %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
