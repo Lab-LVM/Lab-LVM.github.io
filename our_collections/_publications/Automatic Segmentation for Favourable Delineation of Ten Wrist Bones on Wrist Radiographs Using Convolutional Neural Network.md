@@ -4,9 +4,10 @@ author: Jongbin Ryu
 date: 2022-10-10
 publication: Journal of Personalized Medicine
 img: /assets/images/papers/paper_image6.png
+tags: tag1 tag2 tag3
+paper_url: https://scholar.google.com
+code_url: https://github.com
 ---
-
-# 1. Abstraction
 Purpose:
 This study aimed to develop and validate an automatic segmentation algorithm for the boundary delineation of ten wrist bones, consisting of eight carpal and two distal forearm bones, using a convolutional neural network (CNN).
 Methods:
