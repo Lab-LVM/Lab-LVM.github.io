@@ -1,3 +1,4 @@
+// 1. intro
 .home-intro {
     display: flex;
     align-items: center;
@@ -36,6 +37,7 @@
     }
 }
 
+// 2. latest work
 .section-info {
     max-width: 540px;
     margin: 0 auto 48px;
@@ -100,7 +102,7 @@ article {
     }
 }
 
-// 4. member
+// 3. member
 .grey-bg {
     padding: 100px 0 152px;
     background-color: $bg-grey;
