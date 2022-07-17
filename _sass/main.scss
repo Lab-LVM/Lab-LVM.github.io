@@ -3,6 +3,7 @@ $text-color: #181818;
 $text-color-gray: #767676;
 $head-text-color: #181818;
 $bg-grey: #ededf1;
+$theme-color: #ffd147; 
 
 // 2.font
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400&display=swap');
@@ -18,17 +19,20 @@ $bg-grey: #ededf1;
 
 a {
     text-decoration: none;
+    color: $text-color; 
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Inter";
+    font-size: 18px;
     line-height: 1.7;
     color: $text-color;
 }
 
 h1, h2, h3 {
+    margin: 0;
     font-family: "Darker Grotesque";
     font-weight: 800;
     line-height: 1.3;

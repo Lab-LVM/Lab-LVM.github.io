@@ -44,6 +44,7 @@
     text-align: center;
     
     h2 {
+        margin-top: 0;
         margin-bottom: 20px;
         font-size: 48px;
         line-height: 1;
@@ -118,6 +119,7 @@ article {
 }
 
 .card-view {
+    flex-basis: 0;
     flex-grow: 1;
     display: inline-block;
     background-color: white;

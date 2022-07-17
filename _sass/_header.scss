@@ -2,15 +2,16 @@
 .header {
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 60px 16px;
 }
 
-.toggle {
-    background-color: hsla(0, 0, 0, 0);
-    border-style: none;
+.log {
+    font-size: 40px;
+    line-height: 1;
 }
 
 .main-nav {
@@ -22,6 +23,10 @@
     align-items: center;
 }
 
+.ul-reset{
+    margin: 0;
+}
+
 .main-nav-li {
     display: inline-block;
     margin-left: 48px;
@@ -30,10 +35,10 @@
 .main-nav-a {
     position: relative; // 중요
     padding: 12px 0;
-}
-
-.current {
-    color: green;
+    font-family: "Darker Grotesque";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
 }
 
 .current::before {
@@ -46,9 +51,16 @@
     transition: all .2s;
     width: 6px;
     height: 6px;
-    background-color: black;
+    background-color: $theme-color;
     border-radius: 50%;
     box-sizing: border-box;
+}
+
+.toggle {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    // width: 44px;
+    // height: 44px;
 }
 
 // 2. footer
