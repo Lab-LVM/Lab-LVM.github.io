@@ -1,7 +1,8 @@
+collections_dir: our_collections
 collections:
   members:
     output: true
-  published:
+  publications:
     output: true
 
 defaults:
