@@ -1,0 +1,70 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 16px;
+}
+
+.toggle {
+    background-color: hsla(0, 0, 0, 0);
+    border-style: none;
+}
+
+.main-nav {
+    display: block;
+}
+
+.main-nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-li {
+    display: inline-block;
+    margin-left: 48px;
+}
+
+.main-nav-a {
+    position: relative; // 중요
+    padding: 12px 0;
+}
+
+.current {
+    color: green;
+}
+
+.current::before {
+    content: "";
+    position: absolute; // 중요
+    display: block;
+    left: 50%;
+    top: 6px;
+    transform: translateX(-50%);
+    transition: all .2s;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.gallery {
+    grid-template-columns: repeat(4, auto);
+    margin-left: 0;
+    margin-bottom: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.join {
+    padding: 100px 0;
+    display: flex;
+    h2 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
