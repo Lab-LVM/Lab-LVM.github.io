@@ -1,7 +1,7 @@
 ---
 title: Automatic Segmentation for Favourable Delineation of Ten Wrist Bones on Wrist Radiographs Using Convolutional Neural Network
 author: Jongbin Ryu
-date: 2022-10-10
+date: 2020-10-10
 publication: Journal of Personalized Medicine
 img: /assets/images/papers/paper_image6.png
 tags: tag1 tag2 tag3
