@@ -7,7 +7,11 @@
                         {% for pub in site.publications %}
                             <li>
                                 <div class="pub-card">
-                                    <a href={{pub.url}}><img src= {{ pub.img }} width="190" height="190"></a>
+                                    <div class="pub-img">
+                                        <a href={{pub.url}}>
+                                            <img src= {{ pub.img }}>
+                                        </a>
+                                    </div>
                                     <div class="pub-content">
                                         <p class="title"><a href={{ pub.url }}>{{ pub.title }}</a></p>
                                         <p class="info">{{ pub.author }} · {{pub.publication}} · {{pub.date | date: "%Y.%m.%d"}}</p>
