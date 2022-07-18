@@ -22,7 +22,7 @@
     }
 
     .home-intro-right {
-        max-width: 440px;
+        max-width: 575px;
         margin-left: auto;
         h1 {
             margin-bottom: 32px;
@@ -192,5 +192,36 @@ article {
                 display: block;
             }
         }
+    }
+}
+
+// 반응형
+@media only screen and (max-width: 1400px) {
+    .home-intro .home-intro-right {
+        max-width: 440px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .home-intro {
+        flex-direction: column;
+        padding: 40px 0 0;
+    }
+    .home-intro .home-intro-left {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .home-intro .home-intro-right {
+        max-width: 100%;
+        order: -1;
+    }
+    article {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        width: 100%;
     }
 }
