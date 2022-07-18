@@ -5,7 +5,7 @@
     .home-intro-left {
         width: 50%;
         div {
-            height: 484px;
+            height: 634px;
             position: relative;
             width: 100%;
             overflow: hidden;
@@ -197,6 +197,9 @@ article {
 
 // 반응형
 @media only screen and (max-width: 1400px) and (min-width: 1025px) {
+    .home-intro .home-intro-left div {
+        height: 484px;
+    }
     .home-intro .home-intro-right {
         max-width: 440px;
     }
@@ -211,6 +214,9 @@ article {
         width: 100%;
         margin-top: 40px;
     }
+    .home-intro .home-intro-left div {
+        height: 440px;
+    }
     .home-intro .home-intro-right {
         max-width: 100%;
         order: -1;
@@ -223,5 +229,8 @@ article {
 @media only screen and (max-width: 768px) {
     article {
         width: 100%;
+    }
+    .home-intro .home-intro-left div {
+        height: 420px;
     }
 }
