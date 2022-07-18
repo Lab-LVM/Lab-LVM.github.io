@@ -196,13 +196,13 @@ article {
 }
 
 // 반응형
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (min-width: 1025px) {
     .home-intro .home-intro-right {
         max-width: 440px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
     .home-intro {
         flex-direction: column;
         padding: 40px 0 0;
