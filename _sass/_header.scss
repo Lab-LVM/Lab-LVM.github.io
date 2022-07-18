@@ -1,0 +1,126 @@
+// 1. header
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 16px;
+}
+
+.log {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.main-nav {
+    display: block;
+}
+
+.main-nav-box {
+    display: flex;
+    align-items: center;
+}
+
+.ul-reset{
+    margin: 0;
+}
+
+.main-nav-li {
+    display: inline-block;
+    margin-left: 48px;
+}
+
+.main-nav-a {
+    position: relative; // 중요
+    padding: 12px 0;
+    font-family: "Darker Grotesque";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.current::before {
+    content: "";
+    position: absolute; // 중요
+    display: block;
+    left: 50%;
+    top: 6px;
+    transform: translateX(-50%);
+    transition: all .2s;
+    width: 6px;
+    height: 6px;
+    background-color: $theme-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.toggle {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    // width: 44px;
+    // height: 44px;
+}
+
+// 2. footer
+.gallery {
+    grid-template-columns: repeat(4, auto);
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.join {
+    padding: 100px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; // space-between, space-around
+    align-items: center;
+    // 크기가 변경시에 유용
+    // flex-wrap: wrap; 
+    // align-content: flex-start;
+
+    div {
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: flex-start;
+        h2 {
+            margin: 0;
+            padding: 20px 0;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1;
+        }
+        p {
+            margin: 0;
+            padding: 20px 0;
+        }
+        div {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            p {
+                padding: 10px 0;
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
+.border {
+    border-bottom: 1px solid gray;
+}
+
+.sitemap {
+    text-align: center;
+    // border: 5px solid red;
+}
