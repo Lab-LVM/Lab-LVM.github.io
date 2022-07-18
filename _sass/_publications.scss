@@ -14,40 +14,50 @@ $tag-color: #c460aa;
     .pub-card{
         display: flex;
         border: 1px solid #DCDCDC ;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
         border-radius: 20px;
         box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.03);
-        padding: 15px;
-        height: 215px;
+        padding: 20px;
+        height: 300px;
+        .pub-img{
+            img{
+                width:190px;
+                height: 190px;
+            }
+        }
         .pub-content{
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             p{
                 margin: 0;
             }
-            margin: 5px 5px 0px 10px;
+            margin: 10px 10px 0px 20px;
             .title{
-                font-family: "Darker Grotesque";
-                font-size: 23px;
-                line-height: 0.8em;
+                font-size: 18px;
+                line-height: 1em;
                 margin-bottom: 5px;
             }
             .info{
-                font-size: 16px;
+                font-size: 14px;
                 color: $text-color-gray;
                 font-weight: 300;
-                margin-bottom: 5px;
+                margin-top: 10px;
+                margin-bottom: 15px;
             }
             .contents{
                 display: -webkit-box;
                 -webkit-line-clamp: 5;
                 -webkit-box-orient: vertical; 
                 text-overflow: ellipsis;
-                line-height: 1.1em;
+                line-height: 22px;
                 text-align: justify;
                 overflow: hidden;
-                font-size: 16px;
+                font-size: 13px;
                 color: #84898c;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
             .tag-div{
                 align-items: flex-end;
@@ -64,7 +74,6 @@ $tag-color: #c460aa;
         .pub-icon{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             padding: 15px;
             .icon{
                 display: flex;
