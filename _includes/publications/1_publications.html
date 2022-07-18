@@ -14,7 +14,7 @@
                                     </div>
                                     <div class="pub-content">
                                         <p class="title"><a href={{ pub.url }}>{{ pub.title }}</a></p>
-                                        <p class="info">{{ pub.author }} · {{pub.publication}} · {{pub.date | date: "%Y.%m.%d"}}</p>
+                                        <p class="info">{{ pub.author }} • {{pub.publication}} • {{pub.date | date: "%d %b %Y"}}</p>
                                         <div class="contents">{{ pub.content }}</div>
                                         <div class="tag-dev">
                                             {% for tag in pub.tags %}
