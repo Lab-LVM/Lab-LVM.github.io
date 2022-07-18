@@ -76,6 +76,7 @@
 
 .join {
     padding: 100px 0;
+    border-bottom: 1px solid $bg-grey;
 
     display: flex;
     flex-direction: row;
@@ -116,11 +117,8 @@
     }
 }
 
-.border {
-    border-bottom: 1px solid gray;
-}
-
 .sitemap {
+    padding: 40px 0;
     text-align: center;
-    // border: 5px solid red;
+    font-size: 14px;
 }
