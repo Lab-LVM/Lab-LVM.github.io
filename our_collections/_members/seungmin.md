@@ -1,6 +1,6 @@
 ---
 name: seungmin oh
-position: master student
+position: Master Student
 github: https://github.com/SoongE
 email: oh1.seungmin@gmail.com
 profile: https://scholar.google.com/citations?hl=en&user=bfj6WyIAAAAJ
