@@ -109,38 +109,37 @@ html{font-size: 0.7vw;}
 }
 
 @include laptop{
-    .publication .pub-card .pub-content .tag{
-        color:red;
+    html {font-size: 60.5%;}
+    .publication .pub-card .pub-img img{
+        width: 24rem;
     }
 }
 
 @include tablet{
-    html {font-size: 62.5%;}
-    .publication .pub-card .pub-content .tag{
-        color:blue;
-    }
+    html {font-size: 60.5%;}
     .publication{
         width: 75%;
         .pub-card{
             flex-direction: column;
+            align-items: flex-start;
             .pub-img{
-                width: 50%;
+                img{
+                    width:50%;
+                }
+                width: 100%;
+                text-align: center;
             }
             .pub-icon{
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
-                align-items: flex-start;
+                margin: 1.5rem 0 0 1rem;
                 .icon{
                     margin-right: 1.5rem;
+                    width: 9.4rem;
+                    height: 5rem;
                 }
             }
         }
     }
     
-}
-@include mobile{
-    .publication .pub-card .pub-content .tag{
-        color:green;
-    }
 }
