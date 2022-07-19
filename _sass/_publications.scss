@@ -1,5 +1,9 @@
+@import "utils";
 
 $tag-color: #c460aa;
+
+@include laptop{}
+
 .publication{
     a{
         color: $text-color;
