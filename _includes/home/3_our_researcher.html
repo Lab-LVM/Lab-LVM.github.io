@@ -17,14 +17,19 @@
                                         <a href="{{ member.url }}"><img src="{{ member.img_url }}"></a>
                                     </div>
                                     <div class="card-name-pos">
-                                        <h3>{{ member.name }}</h3>
-                                        <p>{{ member.position }}</p>
+                                        <h3>{{ member.name | capitalize }}</h3>
+                                        <p>{{ member.position | capitalize }}</p>
+                                        <div>
+                                            <a href="{{ memeber.github }}"><img src="/assets/icons/member_card_github.svg"></a>
+                                            <a href="{{ memeber.email }}"><img src="/assets/icons/member_card_envelope.svg"></a>
+                                            <a href="{{ memeber.profile }}"><img src="/assets/icons/member_card_person.svg"></a>
+                                        </div>
                                     </div>
                                     <div class="card-desc">
                                         <ul>
                                             {% assign interests = member.research_interests | slice: 0,3 %}
                                             {% for interest in interests %}
-                                            <li>{{ interest }}</li>
+                                            <li>&#9830 {{ interest }}</li>
                                             {% endfor %}
                                             {% if member.research_interests.size > 3 %}
                                             <li>...</li>
