@@ -2,17 +2,11 @@
 layout: with_title
 title: Members
 description: introduce our lab members
+position_list:
+    - PhD Student
+    - Master Student
+    - Undergraduate Student
 ---
 
-<ul>
-    {% for member in site.members %}
-        <li>
-            <h2><a href="{{ member.url }}">{{ member.name }}</a></h2>
-            <h3>{{ member.position }}</h3>
-            <h4>{{ member.github }}</h4>
-            <h4>{{ member.email }}</h4>
-            <img src="{{ member.img_url }}" width="500" height="500">
-            <!-- <p>{{ member.content | markdownify }}</p> -->
-        </li>
-    {% endfor %}
-</ul>
+{% include members/1_professor.html %}
+{% include members/2_member.html %}

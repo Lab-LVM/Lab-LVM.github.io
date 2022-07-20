@@ -1,16 +1,17 @@
 // 1.color
-$bg-white: #fff;
 $text-color: #181818;
 $text-color-gray: #767676;
 $head-text-color: #181818;
+$bg-white: #fff;
 $bg-grey: #ededf1;
+$line-gray: #B3B3B3;
 $theme-color: #ffd147; 
 
 // 2.font
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400&display=swap');
 
 // 3.sub-scss
-@import "header", "home", "publications", "utils";
+@import "header", "home", "members", "publications", "utils";
 
 // 4.basic tag settings
 *, *::after, *::before {

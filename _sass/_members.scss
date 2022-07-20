@@ -1,0 +1,65 @@
+.grid-card-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    margin-left: -16px;
+    margin-right: -16px;
+    column-rule: 10px solid red;
+    
+    .card-view {
+        background-color: transparent; 
+        border-right: 1px solid $line-gray;
+        border-radius: 0;
+        margin: 23px 0;
+
+        .card-desc {
+            margin-bottom: 0;
+
+            ul {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .grid-card-view .card-view:nth-child(3n) {
+        border: 0;
+    }
+    .grid-card-view .card-view:nth-child(3n+1):after {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+        position: absolute; // 중요
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1025px) {
+    .grid-card-view {
+        grid: auto / auto auto auto;
+    }
+    .grid-card-view .card-view:nth-child(3n) {
+        border: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-card-view {
+        grid: auto / auto auto;
+    }
+    .grid-card-view .card-view:nth-child(2n) {
+        border: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-card-view {
+        grid: auto / auto;
+    }
+    .grid-card-view .card-view:nth-child(n) {
+        border: 0;
+    }
+}
