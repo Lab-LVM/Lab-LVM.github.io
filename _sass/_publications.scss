@@ -46,13 +46,12 @@ html{font-size: 0.7vw;}
             .title{
                 font-size: 1.8rem;
                 line-height: 2rem;
-                margin-bottom: 0.5rem;
             }
             .info{
                 font-size: 1.4rem;
                 color: $text-color-gray;
-                margin-top: 1rem;
-                margin-bottom: 1.5rem;
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
             }
             .contents{
                 display: -webkit-box;
@@ -129,6 +128,10 @@ html{font-size: 0.7vw;}
                 width: 100%;
                 text-align: center;
             }
+            .pub-content .info{
+                margin-top: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
             .pub-icon{
                 display: flex;
                 flex-direction: row;
@@ -141,5 +144,12 @@ html{font-size: 0.7vw;}
             }
         }
     }
-    
+}
+
+@include mobile{
+    .publication .pub-card .pub-content{
+        .contents{
+            line-height: 2rem;
+        }
+    }
 }
