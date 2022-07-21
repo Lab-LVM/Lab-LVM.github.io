@@ -6,6 +6,11 @@ $bg-white: #fff;
 $bg-grey: #ededf1;
 $line-gray: #B3B3B3;
 $theme-color: #ffd147; 
+$codeblock-color: #f4f4f4;
+
+@import "lib/@primer/css/base";
+@import "lib/@primer/css/markdown";
+@import "lib/@primer/css/github";
 
 // 2.font
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400&display=swap');
