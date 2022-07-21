@@ -107,6 +107,13 @@ html{font-size: 0.7vw;}
     }
 }
 
+@include desktop{
+    html {font-size: 62.5%}
+    .publication{
+        width: 140rem;
+    }
+}
+
 @include laptop{
     html {font-size: 60.5%;}
     .publication .pub-card .pub-img img{
@@ -147,6 +154,9 @@ html{font-size: 0.7vw;}
 }
 
 @include mobile{
+    .publication{
+        width: 95%;
+    }
     .publication .pub-card .pub-content{
         .contents{
             line-height: 2rem;
