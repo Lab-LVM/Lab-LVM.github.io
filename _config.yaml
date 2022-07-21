@@ -4,6 +4,8 @@ collections:
     output: true
   publications:
     output: true
+  joins:
+    output: true
 
 defaults:
   - scope:
