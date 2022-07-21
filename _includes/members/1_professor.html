@@ -11,20 +11,24 @@
                         <div>
                             {% assign members = site.members | where:"position", "Research Professor" %}
                             {% for member in members %}
-                            <div class="card-view">
-                                <div class="card-img shadow">
-                                    <a href="{{ member.url }}"><img src="{{ member.img_url }}"></a>
-                                </div>
-                                <div class="card-name-pos">
-                                    <h3>{{ member.name | capitalize }}</h3>
-                                    <p>{{ member.position | capitalize }}</p>
-                                    <div>
-                                        <a href="{{ memeber.github }}"><img src="/assets/icons/member_card_github.svg"></a>
-                                        <a href="{{ memeber.email }}"><img src="/assets/icons/member_card_envelope.svg"></a>
-                                        <a href="{{ memeber.profile }}"><img src="/assets/icons/member_card_person.svg"></a>
+                            <div class="wide-profile-view">
+                                <div class="profile-left">
+                                    <div class="profile-img">
+                                        <a href="{{ member.url }}"><img src="{{ member.img_url }}"></a>
+                                    </div>
+                                    <div class="profile-name-pos">
+                                        <h3>{{ member.name | capitalize }}</h3>
+                                        <p>{{ member.position | capitalize }}</p>
+                                        <div>
+                                            <a href="{{ memeber.github }}"><img src="/assets/icons/member_card_github.svg"></a>
+                                            <a href="{{ memeber.email }}"><img src="/assets/icons/member_card_envelope.svg"></a>
+                                            <a href="{{ memeber.profile }}"><img src="/assets/icons/member_card_person.svg"></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-desc">
+                                <div class="profile-desc">
+                                    <h1>{{ member.introduction }}</h1>
+                                    <p>{{ member.description }}</p>
                                     <ul>
                                         {% assign interests = member.research_interests | slice: 0,3 %}
                                         {% for interest in interests %}
