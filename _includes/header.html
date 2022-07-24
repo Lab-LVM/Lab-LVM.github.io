@@ -22,7 +22,24 @@
 					</ul>
 				</div>
 			</nav>
-			<button class="toggle" ><img src="/assets/images/home/toggle.png"></button>
+			<div class="nav-icon">
+				<img src="/assets/icons/bars-solid.svg" class="main-nav-bar"></i>
+				<button class="toggle" ><img src="/assets/images/home/toggle.png"></button>
+			</div>
 		</div>
+	</div>
+	<div class="nav-box">
+		{% for item in site.data.navigation %}
+			<li class="nav-li">
+				<a 
+					href="{{ item.link }}" 
+					{% if page.url == item.link %}
+						class="nav-current"
+					{% endif %}
+				>
+					{{ item.name }}
+				</a>
+			</li>
+		{% endfor %}
 	</div>
 </div>
