@@ -16,7 +16,7 @@ $codeblock-color: #f4f4f4;
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400&display=swap');
 
 // 3.sub-scss
-@import "header", "home", "members", "publications", "join", "utils";
+@import "header", "home", "members", "publications", "join", "contact", "utils";
 
 // 4.basic tag settings
 *, *::after, *::before {

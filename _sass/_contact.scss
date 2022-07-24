@@ -1,0 +1,76 @@
+@import "utils";
+
+html{font-size: 0.7vw;}
+$interval_margin: 2rem;
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    padding-top: 80px;
+    margin: auto;
+    .contact-img{
+        width: 100%;
+        height: 45rem;
+        margin-bottom: 1rem;
+    }
+    .contact-block{
+        width: 86%;
+
+    }
+    .contact-block-regular{
+        width: 100%;
+        background-color: $codeblock-color;
+        padding: 1.5rem;
+        border-radius: .8rem;
+        margin-top: $interval_margin;
+    }
+    .contact-block-large{
+        width: 100%;
+        height: 40rem;
+        background-color: $codeblock-color;
+        padding: 1.5rem;
+        border-radius: .8rem;
+        margin-top: $interval_margin;
+    }
+    .contact-btn{
+        display:inline-block;
+        text-align:center;
+        white-space:nowrap;
+        vertical-align:middle;
+        user-select:none;
+        border:1px solid transparent;
+        padding:.375rem 1.5rem;
+        line-height:1.5;
+        border-radius: .8rem;
+        margin: $interval_margin 0;
+        background-color: rgba($color: $theme-color, $alpha: 0.85)
+    }
+}
+
+
+
+@include desktop{
+    html {font-size: 62.5%}
+    .contact{
+        width: 130rem;
+    }
+}
+
+@include laptop{
+    html {font-size: 60.5%;}
+}
+
+@include tablet{
+    html {font-size: 60.5%;}
+    .contact{
+        width: 75%;
+    }
+}
+
+@include mobile{
+    .contact{
+        width: 95%;
+    }
+}
