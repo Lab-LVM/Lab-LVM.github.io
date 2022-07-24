@@ -5,6 +5,7 @@ $tag-color: #c460aa;
 html{font-size: 0.7vw;}
 
 .markdown-body {
+  width: 100%;
   a {
     color: $theme-color;
     &:hover {
