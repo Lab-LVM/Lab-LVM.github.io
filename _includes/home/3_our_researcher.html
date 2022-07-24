@@ -10,9 +10,9 @@
                     <div>
                         <div>
                             <div class="card-grid">
-                                {% assign members = site.members | sample: 3 %}
+                                {% assign members = site.members | sample: 9 %}
                                 {% for member in members %}
-                                <div class="card-view">
+                                <div class="card-view home-card-view">
                                     <div class="card-img">
                                         <a href="{{ member.url }}"><img src="{{ member.img_url }}"></a>
                                     </div>
@@ -41,8 +41,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="scroller">
+                        <div class="scroller-btn"></div>
+                        <div class="scroller-btn"></div>
+                        <div class="scroller-btn"></div>
+                    </div>
                 </div>
             </div>  
         </div>
     </div>
 </section>
+<script src="/assets/js/home.js"></script>
