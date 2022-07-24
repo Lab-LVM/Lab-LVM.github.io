@@ -96,3 +96,8 @@ h1, h2, h3 {
     }
 
 }
+@include mobile{
+    .container {
+        max-width: 560px;
+    }
+}

@@ -186,7 +186,7 @@ article {
         p {
             margin-top: 5px;
             margin-bottom: 5px;
-            font-size: 12px;
+            font-size: 15px;
             font-family: 'Darker Grotesque';
             // color: $text-color-gray;
         }
@@ -258,5 +258,12 @@ article {
     .home-intro .home-intro-right {
         max-width: 100%;
         order: -1;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home-intro .home-intro-right h1 {
+        font-size: 36px;
+        margin-bottom: 36px;
     }
 }

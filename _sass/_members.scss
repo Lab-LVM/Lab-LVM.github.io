@@ -33,7 +33,7 @@
         p {
             margin-top: 5px;
             margin-bottom: 5px;
-            font-size: 12px;
+            font-size: 15px;
             font-family: 'Darker Grotesque';
             // color: $text-color-gray;
         }
@@ -207,5 +207,12 @@
     }
     .grid-card-view .card-view:nth-child(n):after{
         display: None;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .wide-profile-view .profile-desc h1 {
+        font-size: 36px;
     }
 }
