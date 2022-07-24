@@ -32,7 +32,7 @@
                                     <ul>
                                         {% assign interests = member.research_interests | slice: 0,3 %}
                                         {% for interest in interests %}
-                                        <li>&#9830 {{ interest }}</li>
+                                        <li>- {{ interest }}</li>
                                         {% endfor %}
                                         {% if member.research_interests.size > 3 %}
                                         <li>...</li>
