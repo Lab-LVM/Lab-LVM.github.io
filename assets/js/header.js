@@ -7,8 +7,9 @@ if (document.cookie == ''){
 
 var hidden = document.cookie.split('=')[1];
 bar.addEventListener("click", toggle)
+window.addEventListener('resize', toggle_nav_bar);
 
-if (hidden=='true') {
+if (hidden=='true' || window.innerWidth > 1024) {
     nav_box.style.display = ''
 } else {
     nav_box.style.display = 'block'
@@ -23,5 +24,17 @@ function toggle() {
         nav_box.style.display = ''
         document.cookie = 'hidden=true'
         hidden='true'
+    }
+}
+
+function toggle_nav_bar(){
+    if (window.innerWidth > 1024){
+        nav_box.style.display = ''
+    } else {
+        if (hidden == 'true'){
+            nav_box.style.display = ''
+        } else {
+            nav_box.style.display = 'block'
+        }
     }
 }
