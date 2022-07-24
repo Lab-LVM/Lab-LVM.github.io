@@ -1,4 +1,6 @@
 <div class="contact">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=62b11fdd8dcc7f73e4c80b9636620798"></script>
+
     <img class="contact-img" src="/assets/images/contact/thumb.jpeg">
 
     <div class="contact-block">
@@ -8,7 +10,7 @@
         </div>
     
         <div class="contact-block-regular">
-            <span>Name</span>
+            <span>Email</span>
             <span style="padding-left: 1.5rem;">INPUTS</span>
         </div>
     
@@ -20,3 +22,12 @@
         <button type="submit" class="contact-btn">Send Message</button>
     </div>
 </div>
+<div id="map" class="map"></div>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(37.28655579967086, 127.0458858734021),
+        level: 3
+    };
+    var map = new kakao.maps.Map(container, options);
+</script>
