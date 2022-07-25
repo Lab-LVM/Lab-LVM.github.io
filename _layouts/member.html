@@ -19,7 +19,7 @@ layout: default
                             <div class="wide-profile-view">
                                 <div class="profile-left">
                                     <div class="profile-img">
-                                        <a><img src="{{ page.img_url }}"></a>
+                                        <a><img src="{{ page.img_url | replace: 'members', 'members_large' }}"></a>
                                     </div>
                                     <div class="profile-name-pos">
                                         <h3>{{ page.name | capitalize }}</h3>
