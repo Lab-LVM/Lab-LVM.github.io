@@ -126,16 +126,18 @@
     // 크기가 변경시에 유용
     // flex-wrap: wrap; 
     // align-content: flex-start;
+    img {
+        margin-right: 40px;
+    }
 
     div {
-        margin-left: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center; 
         align-items: flex-start;
         h2 {
             margin: 0;
-            padding: 20px 0;
+            padding-top: 20px;
             font-size: 48px;
             font-weight: 800;
             line-height: 1;
@@ -150,12 +152,20 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            img {
-                margin: 0;
-            }
             p {
                 padding: 10px 0;
                 padding-left: 12px;
+            }
+            a {
+                margin: 0 5px;
+                display: block;
+                border-radius: 5px;
+                background-color: $bg-grey;
+                padding: 12px;
+                img {
+                    margin: 0;
+                    width: 16px;
+                }
             }
         }
     }
@@ -181,11 +191,14 @@
     .join {
         flex-direction: column;
         align-items: flex-start;
-        img {
-            margin-left: 60px;
-        }
     }
     .gallery {
         grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 32px 16px;
     }
 }
