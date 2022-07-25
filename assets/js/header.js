@@ -5,7 +5,8 @@ if (document.cookie == ''){
     document.cookie = 'hidden=true';
 }
 
-var hidden = document.cookie.split('=')[1];
+var cookies = document.cookie.split(';');
+var hidden = cookies[cookies.length-1].split('=')[1];
 bar.addEventListener("click", toggle)
 window.addEventListener('resize', toggle_nav_bar);
 
