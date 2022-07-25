@@ -26,7 +26,10 @@ If you want to add or modify your personal information, please follow 3 steps de
 
 1. find and open your profile readme files (see `our_collections/members/your_name.md`)
 
-2. change your personal informations such as `name`, `position`, `github`.
+2. change your personal informations such as `name`, `position`, `github`. 
+    - If you want to know about how to use certain tag, see `our_collections/joins/99_test.md`
+    - If you are not familiar with markdown(md) file, just use typora, it will help you.
+    - If you want to add image in your profile, add it in `assets/images/etc`.
 
 3. (optional) If you want to change your profile image, please change image files whose path was given by `img_url` property.
     - `assets/images/members`: small sized image (100x100)
