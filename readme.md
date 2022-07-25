@@ -6,3 +6,11 @@ Image Size
 - Join: 250x250 (`assets/image/home/join.png`)
 - Professor: 400x400 (`assets/image/members/professor.jpg`)
 - Member: 100x100 (`asserts/image/members/profile_img.png`)
+
+
+Position
+
+- Undergraduate Student
+- Master Student
+- PhD Student
+- Professor
