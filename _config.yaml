@@ -17,6 +17,7 @@ defaults:
 exclude: 
   - tmp/
   - vendor/
+  - readme.md
 
 plugins:
   - jekyll-feed
