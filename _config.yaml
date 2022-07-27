@@ -29,8 +29,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-spaceship
-  - jekyll-maps
 
-maps:
-  google:
-    api_key: AIzaSyB6EQIam9lIzV6cPKGZAO2GrwTFkoKVOME
+gems:
+  - jekyll-maps
