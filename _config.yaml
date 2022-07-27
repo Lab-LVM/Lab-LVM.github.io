@@ -24,13 +24,11 @@ exclude:
   - vendor/
   - readme.md
 
-plugins:
+gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-spaceship
-
-gems:
   - jekyll-maps
 
 maps:
