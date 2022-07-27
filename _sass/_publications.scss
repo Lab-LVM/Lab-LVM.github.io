@@ -4,6 +4,59 @@ $tag-color: #c460aa;
 
 html{font-size: 0.7vw;}
 
+.publication-detail{
+    .detail-header{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        .detail-img{
+            -webkit-filter: brightness(.7);
+            filter: brightness(.7);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .detail-header-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            .detail-title{
+                width: 80%;
+                font-size: 5rem;
+                text-align: center;
+                color: white;
+                line-height: 6rem;
+            }
+            .detail-abstract{
+                color: white;
+                width: 80%;
+                margin-top: 15rem;
+                padding: 4rem 2rem;
+                font-size: 1.8rem;
+                background-color: #172b4d;
+                .detail-abstract-date{
+                    text-align: center;
+                }
+                .detail-abstract-content{
+                    margin-top: 3rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .detail-content{
+        width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+}
+
 .publication{
     padding-top: 80px;
     width: 85%;
@@ -108,9 +161,16 @@ html{font-size: 0.7vw;}
     }
 }
 
+
 @include desktop{
     html {font-size: 62.5%}
     .publication{
+        width: 140rem;
+    }
+    .publication-detail .detail-content{
+        width: 140rem;
+    }
+    .publication-detail .detail-header .detail-header-box .detail-abstract{
         width: 140rem;
     }
 }
@@ -152,6 +212,9 @@ html{font-size: 0.7vw;}
             }
         }
     }
+    .publication-detail .detail-content{
+        width: 75%;
+    }
 }
 
 @include mobile{
@@ -161,6 +224,22 @@ html{font-size: 0.7vw;}
     .publication .pub-card .pub-content{
         .contents{
             line-height: 2rem;
+        }
+    }
+    .publication-detail .detail-content{
+        width: 95%;
+    }
+    .publication-detail{
+        .detail-header{
+            .detail-header-box{
+                .detail-title{
+                    width: 90%;
+                }
+                .detail-abstract{
+                    margin-top: 10rem;
+                    width: 100%;
+                }
+            }
         }
     }
 }

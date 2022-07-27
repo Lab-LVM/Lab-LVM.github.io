@@ -13,7 +13,12 @@ defaults:
       type: "members"
     values:
       layout: "member"
-
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+      
 exclude: 
   - tmp/
   - vendor/
