@@ -42,11 +42,11 @@ src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-
 
     <img class="contact-img" src="/assets/images/contact/thumb.jpeg">
 
-    <form method="post" data-email="mangusn1@ajou.ac.kr" action="https://script.google.com/macros/s/AKfycbz4F48a1pSCVSOXq1B8oljJayYrymPA4dj-7FLjgdjwvMCBDUQ9EsIxeRoBFKVGiJh-/exec">
+    <form action="https://formsubmit.co/mangusn1@gmail.com" method="POST">
         <div class="contact-block">
-            <input type="text" name="name" id="name" placeholder="Name" class="contact-block-regular">
-            <input type="email" name="email" id="email" placeholder="Email" class="contact-block-regular">
-            <textarea name="message" placeholder="Message" class="contact-block-large"></textarea>
+            <input type="text" name="name" id="name" placeholder="Name" class="contact-block-regular" required>
+            <input type="email" name="email" id="email" placeholder="Email" class="contact-block-regular" required>
+            <textarea name="message" placeholder="Message" class="contact-block-large" required></textarea>
     
             <button type="submit" onclick="return check();" class="contact-btn">Send Message</button>
         </div>
