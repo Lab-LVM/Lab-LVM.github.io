@@ -24,13 +24,8 @@ exclude:
   - vendor/
   - readme.md
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-spaceship
-  - jekyll-maps
-
-maps:
-  google:
-    api_key: AIzaSyB6EQIam9lIzV6cPKGZAO2GrwTFkoKVOME
