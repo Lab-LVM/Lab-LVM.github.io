@@ -217,6 +217,15 @@ html{font-size: 0.7vw;}
     .publication-detail .detail-content{
         width: 75%;
     }
+    .publication-detail{
+        .detail-header{
+            height: 120vh;
+            margin-top: -33.3rem;
+            .detail-header-box{
+                top: 65%;
+            }
+        }
+    }
 }
 
 @include mobile{
