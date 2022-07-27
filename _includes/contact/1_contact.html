@@ -53,12 +53,12 @@ src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-
     </form>
 </div>
 
-<div id="map" class="map"></div>
-<script>
-    var container = document.getElementById('map');
-    var options = {
-        center: new kakao.maps.LatLng(37.28655579967086, 127.0458858734021),
-        level: 3
-    };
-    var map = new kakao.maps.Map(container, options);
-</script>
+<div>
+    {% 
+        google_map
+        width="100%"
+        latitude="37.28655579967086" longitude="127.0458858734021"
+        marker_title="CILAB" marker_url="https://www.ajou.ac.kr/kr/index.do"
+        zoom="15%"
+    %}
+</div>
