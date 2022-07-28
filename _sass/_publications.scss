@@ -219,10 +219,23 @@ html{font-size: 0.7vw;}
     }
     .publication-detail{
         .detail-header{
-            height: 120vh;
+            height: 130vh;
             margin-top: -36.3rem;
             .detail-header-box{
                 top: 65%;
+                .detail-title{
+                    width: 90%;
+                    font-size: 3.5rem;
+                    line-height: 3.5rem;
+                }
+                .detail-abstract{
+                    padding: 3rem 2rem;
+                    margin-top: 5rem;
+                    width: 90%;
+                    .detail-abstract-content{
+                        margin-top: 2rem;
+                    }
+                }
             }
         }
     }
@@ -243,11 +256,8 @@ html{font-size: 0.7vw;}
     .publication-detail{
         .detail-header{
             .detail-header-box{
-                .detail-title{
-                    width: 90%;
-                }
+                top: 70%;
                 .detail-abstract{
-                    margin-top: 10rem;
                     width: 100%;
                 }
             }
