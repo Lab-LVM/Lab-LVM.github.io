@@ -59,6 +59,7 @@ $interval_margin: 2rem;
         flex:1.1;
         .contact-info-content{
             font-size: 1.5rem;
+            margin-bottom: 2rem;
         }
     }
     .map{
@@ -108,6 +109,20 @@ $interval_margin: 2rem;
         }
     }
     .contact-info{
+        display: block;
         width: 95%;
+        .contact-info-detail{
+            .contact-info-content{
+                font-size: 1.5rem;
+                margin-bottom: 0rem;
+            }
+        }
+        .map{
+            width: 100%;
+            height: 50rem;
+            .gm-style{
+                font-size: 1.8rem;
+            }
+        }
     }
 }
