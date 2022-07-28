@@ -41,11 +41,16 @@ If you want to add or modify your personal information, please follow 3 steps de
 
 ### How to add/modify your paper?
 
-If you want to add or modify your paper page, please follow 2 steps described below.
+If you want to add or modify your paper page, please follow 3 steps described below.
 
 1. add or open paper readme files (see `our_collections/_publications/your_paper.md`)
 
 2. change its contents on your style.
+
+3. prepare two image files whose path was given by img property.
+   - assets/images/papers: thumbnail image of publication page (401x401)
+   - assets/images/papers_large: the background of detail page in publication page (1700x1130)
+   - You have to **use same file name** for large and small image version.
 
 ### How to add join content
 
