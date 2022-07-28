@@ -71,9 +71,14 @@
             content: ">";
         }
     }
-    .nav-li:hover {
-        background-color: $bg-grey;
-    }
+}
+
+.gray-hover:hover {
+    background-color: rgba(118, 118, 118, 0.3);
+}
+
+.white-hover:hover {
+    background-color: $bg-grey;
 }
 
 .current::before {
