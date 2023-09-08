@@ -59,3 +59,4 @@ It will be formatted according to the markdown format, so please follow the mark
 - A file is required for each section.
 - If you want to change the order of the sections, please number them before the file name.
 - The location of the file is as follows: `our_collections/_joins/1_sectionName.md`
+- 
